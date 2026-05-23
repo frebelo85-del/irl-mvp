@@ -1,0 +1,84 @@
+{
+  "missions": [
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901101",
+      "category": "social",
+      "teaser": "Someone might love hearing from you today.",
+      "title": "Mission: reach out",
+      "body": "Think of one person you genuinely miss. Send them a short message — not a meme, not a link. Just you, checking in.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901102",
+      "category": "social",
+      "teaser": "Your voice counts more than a tap.",
+      "title": "Mission: use your voice",
+      "body": "Call someone you usually only text. It can be two minutes. Ask how they are and really listen.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901103",
+      "category": "nature",
+      "teaser": "30 seconds. No goal. Just look.",
+      "title": "Mission: notice the outside",
+      "body": "Go to a window or step outside for 30 seconds. Name one thing you never really noticed before — a sound, a shape, a color.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901104",
+      "category": "nature",
+      "teaser": "Touch something alive.",
+      "title": "Mission: connect with the living world",
+      "body": "Find a plant, a tree, grass, or a pet. Touch it gently. Take one slow breath while you do.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901105",
+      "category": "curiosity",
+      "teaser": "One question you’ve never asked.",
+      "title": "Mission: ask something new",
+      "body": "Ask someone a real question you’ve never asked them before — about their day, a memory, or what they’re excited about. Stay curious, not clever.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901106",
+      "category": "curiosity",
+      "teaser": "Learn one small thing offline.",
+      "title": "Mission: a tiny discovery",
+      "body": "Learn one new fact without opening a feed — read a page of a book, a sign on the street, or ask a human. One fact. That’s enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901107",
+      "category": "adventure",
+      "teaser": "Change the route. Change the day.",
+      "title": "Mission: take a different path",
+      "body": "On your next walk or commute, take one different turn — even a small one. Pay attention to what’s different.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901108",
+      "category": "creativity",
+      "teaser": "Make something small, just for you.",
+      "title": "Mission: a 5-minute creation",
+      "body": "For five minutes, make something with your hands — doodle, fold paper, hum a melody, rearrange a corner of your space. No posting required.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901109",
+      "category": "calm",
+      "teaser": "Silence is not empty.",
+      "title": "Mission: give your brain quiet",
+      "body": "Sit or stand still for two minutes without a podcast, video, or feed. Hear the room. Let your mind drift without grabbing new input.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678901110",
+      "category": "learning",
+      "teaser": "One skill, tiny step.",
+      "title": "Mission: micro-practice",
+      "body": "Pick something you’ve wanted to learn. Do exactly one tiny practice — one chord, one sentence, one stretch, one line read aloud. Stop after that one step.",
+      "locale": "en"
+    }
+  ]
+}

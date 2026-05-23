@@ -1,0 +1,39 @@
+---
+description: IRL app — Expo + Supabase MVP. Before implementing features, align with docs/MASTER.md (vision) and docs/PRD.md (technical specs). Applies to missions, notifications, auth, RLS.
+alwaysApply: true
+---
+
+# IRL — règles projet (Cursor)
+
+## Documents source
+
+1. **[docs/MASTER.md](docs/MASTER.md)** — vision produit, ton, philosophie (**pas** réduction forcée du screen time ; activation IRL ; nudges aléatoires / espacement volontaire).
+2. **[docs/PRD.md](docs/PRD.md)** — PRD technique d’exécution : schéma SQL, RLS, Edge Functions, flux mobile, phases d’implémentation.
+
+Pour tout code applicatif nouveau : suivre **PRD** pour le « quoi » technique et **MASTER** pour le « pourquoi » UX / message.
+
+## Stack MVP
+
+- Frontend : **Expo**, **React Native**, **TypeScript**, **Expo Router**
+- Backend : **Supabase** (Postgres, Auth, Edge Functions)
+- Push : **Expo Notifications** + envoi serveur (**Edge Function** + Expo Push API)
+- Locale contenu utilisateur MVP : **anglais (`en`)**
+- Auth MVP : **session anonyme automatique** ; liaison **Apple / Google optionnelle** dans Settings (PRD §8)
+
+## Non-goals MVP (ne pas implémenter sans demande explicite)
+
+- Détection scroll / temps d’écran / app au premier plan comme déclencheur principal
+- Missions IA, paywall, social / partage viral, streaks lourds
+- « Another mission » (Phase 2)
+- Login obligatoire au premier lancement
+- Analytics tiers (Mixpanel, etc.) — utiliser table `analytics_events` si consentement
+
+## Conventions implémentation
+
+- **Secrets** : jamais de `SUPABASE_SERVICE_ROLE_KEY` dans le client ; réservé aux Edge Functions.
+- **Notifications** : teaser court dans la push ; détail dans l’app (PRD §6.2).
+- **Minimal scope** : ne pas refactorer hors du ticket ; garder MVP aligné phases PRD §11.
+
+## Seed contenu missions
+
+Référence structure / exemples : **[docs/missions.seed.json](docs/missions.seed.json)**.
