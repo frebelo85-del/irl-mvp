@@ -5,7 +5,7 @@ Companion app (Expo + Supabase) — voir [docs/PRD.md](docs/PRD.md) et [docs/MAS
 ## Prérequis
 
 - Node.js LTS (20+)
-- Compte Supabase + **Anonymous Sign-Ins** activés (Phase C)
+- Compte Supabase + **Anonymous Sign-Ins** activés (pour `npm run db:verify` et Phase C)
 
 ## Installation
 
@@ -16,6 +16,26 @@ cp .env.example .env
 npm install
 ```
 
+## Base de données (Supabase CLI)
+
+Prérequis : [Supabase CLI](https://supabase.com/docs/guides/cli) installé et `supabase login`.
+
+```bash
+# Lier le projet cloud (ref = segment d’URL dashboard …/project/<ref>)
+supabase link --project-ref YOUR_PROJECT_REF
+
+# Appliquer les migrations (schéma + seed missions)
+supabase db push
+
+# Régénérer le seed SQL depuis docs/missions.seed.json
+npm run db:seed
+
+# Vérifier RLS + 10 missions + trigger profil (auth anonyme)
+npm run db:verify
+```
+
+Requêtes SQL manuelles : [scripts/phase-b-verify.sql](scripts/phase-b-verify.sql).
+
 ## Commandes
 
 ```bash
@@ -24,8 +44,14 @@ npm run web    # Navigateur
 npm run ios    # Simulateur iOS
 npm run android
 npm run typecheck
+npm run db:seed
+npm run db:verify
 ```
 
 ## Phase A
 
-Écran d’accueil vérifie les variables d’environnement et appelle `supabase.auth.getSession()`. Aucune migration DB ni auth anonyme automatique pour l’instant — voir Phase B/C du PRD.
+Écran d’accueil vérifie les variables d’environnement et appelle `supabase.auth.getSession()`.
+
+## Phase B
+
+Migrations versionnées dans `supabase/migrations/` (schéma PRD §4 + seed des missions). Après `supabase db push`, `npm run db:verify` doit afficher 10 missions et une ligne `profiles` pour un user anonyme de test.

@@ -8,7 +8,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:seed": "node scripts/generate-mission-seed.mjs",
+    "db:verify": "node scripts/verify-phase-b.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
