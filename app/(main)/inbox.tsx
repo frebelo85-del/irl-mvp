@@ -37,9 +37,7 @@ export default function InboxStubScreen() {
         </View>
       ) : null}
       <Text style={styles.note}>
-        You landed here because <Text style={styles.monoInline}>onboarding_completed</Text> is true in{" "}
-        <Text style={styles.monoInline}>public.profiles</Text> (set manually in Phase C test, then Phase D
-        from the app).
+        You completed onboarding — missions will appear here in Phase G.
       </Text>
     </ScrollView>
   );
@@ -78,7 +76,6 @@ const styles = StyleSheet.create({
     color: "#111",
     marginBottom: 8,
   },
-  monoInline: { fontFamily: "monospace", fontSize: 13 },
   note: {
     marginTop: 16,
     fontSize: 12,

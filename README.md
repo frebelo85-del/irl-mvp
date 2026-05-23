@@ -63,6 +63,28 @@ Relancer l’app **sans réinstaller** : même utilisateur anon (persisté local
 
 **Test manuel** : dans le SQL Editor Supabase, passe `profiles.onboarding_completed` à `true` pour ton user — redémarrer l’app doit envoyer vers l’écran inbox stub.
 
-## Phase D (suite)
+## Phase D
 
-À venir : flow onboarding (catégories, horaires, consentement) puis `onboarding_completed = true` depuis l’app.
+Flow onboarding en 3 écrans : **categories** → **hours** → **consent**. À la fin, l’app écrit :
+
+- une ligne dans `user_preferences` (catégories, fenêtre active, fréquence, consentements)
+- `profiles.timezone` (IANA device) + `profiles.onboarding_completed = true`
+- éventuellement `analytics_events` si analytics activé
+
+Redirection vers **`/(main)/inbox`**. Relancer l’app saute l’onboarding.
+
+**Test manuel** (nouvel install ou storage vidé) :
+
+1. Choisir ≥ 2 catégories → horaires → consent → **Get started**
+2. Vérifier en SQL :
+
+```sql
+select * from user_preferences where user_id = '<uuid>';
+select timezone, onboarding_completed from profiles where id = '<uuid>';
+```
+
+**Push token** : même si notifications activées, l’enregistrement du token Expo arrive en **Phase E**.
+
+## Phase E (suite)
+
+À venir : permission push + upsert `push_tokens` après onboarding.

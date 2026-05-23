@@ -1,9 +1,18 @@
+import { OnboardingProvider } from "@/context/OnboardingContext";
 import { Stack } from "expo-router";
 
 export default function OnboardingLayout() {
   return (
-    <Stack screenOptions={{ headerTitle: "IRL", headerBackVisible: false }}>
-      <Stack.Screen name="index" options={{ title: "Get started" }} />
-    </Stack>
+    <OnboardingProvider>
+      <Stack screenOptions={{ headerTitle: "IRL" }}>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen
+          name="categories"
+          options={{ title: "Categories", headerBackVisible: false }}
+        />
+        <Stack.Screen name="hours" options={{ title: "Active hours" }} />
+        <Stack.Screen name="consent" options={{ title: "Notifications" }} />
+      </Stack>
+    </OnboardingProvider>
   );
 }
