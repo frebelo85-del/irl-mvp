@@ -1,109 +1,56 @@
-import { useEffect, useState } from "react";
-import { ActivityIndicator, Platform, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Redirect } from "expo-router";
+import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
-import {
-  getSupabaseEnv,
-  maskAnonKeyPreview,
-  maskUrlPreview,
-} from "@/constants/env";
-import { getSessionSafe } from "@/lib/supabase";
+import { useBootstrap } from "@/hooks/useBootstrap";
 
-export default function HomeScreen() {
-  const [sessionLine, setSessionLine] = useState<string>("…");
-  const [loading, setLoading] = useState(true);
+export default function IndexGateScreen() {
+  const state = useBootstrap();
 
-  const env = getSupabaseEnv();
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      const { session, error } = await getSessionSafe();
-      if (cancelled) return;
-      if (error) {
-        setSessionLine(`API error: ${error}`);
-      } else if (!session) {
-        setSessionLine("No session (expected before Phase C anonymous sign-in).");
-      } else {
-        setSessionLine(`Session OK (user id: ${session.user.id.slice(0, 8)}…)`);
-      }
-      setLoading(false);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  return (
-    <ScrollView contentContainerStyle={styles.screen}>
-      <Text style={styles.title}>IRL</Text>
-      <Text style={styles.sub}>Phase A — scaffold + env</Text>
-
-      <View style={styles.card}>
-        <Text style={styles.label}>Supabase configured</Text>
-        <Text style={styles.value}>{env.configured ? "yes" : "no"}</Text>
+  if (state.status === "loading") {
+    return (
+      <View style={styles.center}>
+        <ActivityIndicator size="large" />
+        <Text style={styles.caption}>Loading…</Text>
       </View>
+    );
+  }
 
-      <View style={styles.card}>
-        <Text style={styles.label}>EXPO_PUBLIC_SUPABASE_URL (preview)</Text>
-        <Text style={styles.mono}>{maskUrlPreview(env.url)}</Text>
+  if (state.status === "error") {
+    return (
+      <View style={styles.errorBox}>
+        <Text style={styles.errorTitle}>{state.isConfig ? "Configuration" : "Could not sign in"}</Text>
+        <Text style={styles.errorBody}>{state.message}</Text>
       </View>
+    );
+  }
 
-      <View style={styles.card}>
-        <Text style={styles.label}>EXPO_PUBLIC_SUPABASE_ANON_KEY (preview)</Text>
-        <Text style={styles.mono}>{maskAnonKeyPreview(env.anonKey)}</Text>
-      </View>
-
-      <View style={styles.card}>
-        <Text style={styles.label}>getSession()</Text>
-        {loading ? (
-          <ActivityIndicator style={styles.spinner} />
-        ) : (
-          <Text style={styles.value}>{sessionLine}</Text>
-        )}
-      </View>
-    </ScrollView>
-  );
+  return <Redirect href={state.href} />;
 }
 
 const styles = StyleSheet.create({
-  screen: {
-    flexGrow: 1,
-    padding: 24,
-    paddingTop: 56,
+  center: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
     gap: 12,
     backgroundColor: "#f8f9fa",
   },
-  title: {
-    fontSize: 28,
+  caption: { fontSize: 15, color: "#6b7280" },
+  errorBox: {
+    flex: 1,
+    justifyContent: "center",
+    padding: 24,
+    backgroundColor: "#fef2f2",
+  },
+  errorTitle: {
+    fontSize: 18,
     fontWeight: "700",
-    color: "#111",
-  },
-  sub: {
-    fontSize: 15,
-    color: "#555",
     marginBottom: 8,
+    color: "#991b1b",
   },
-  card: {
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    padding: 16,
-    borderWidth: 1,
-    borderColor: "#e5e7eb",
-  },
-  label: {
-    fontSize: 13,
-    fontWeight: "600",
-    color: "#374151",
-    marginBottom: 6,
-  },
-  value: {
+  errorBody: {
     fontSize: 15,
-    color: "#111",
+    lineHeight: 22,
+    color: "#451a1a",
   },
-  mono: {
-    fontSize: 14,
-    fontFamily: Platform.select({ ios: "Menlo", android: "monospace", default: "monospace" }),
-    color: "#111",
-  },
-  spinner: { marginVertical: 4 },
 });
