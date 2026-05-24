@@ -83,8 +83,36 @@ select * from user_preferences where user_id = '<uuid>';
 select timezone, onboarding_completed from profiles where id = '<uuid>';
 ```
 
-**Push token** : même si notifications activées, l’enregistrement du token Expo arrive en **Phase E**.
+**Push token** : enregistré en **Phase E** si notifications activées (Dev Build + `EXPO_PUBLIC_EAS_PROJECT_ID`).
 
-## Phase E (suite)
+## Phase E
 
-À venir : permission push + upsert `push_tokens` après onboarding.
+Après onboarding (si **notifications activées**), l’app demande la permission OS, récupère un **Expo Push Token** et l’upsert dans `push_tokens`.
+
+**Prérequis push réel :**
+
+- `EXPO_PUBLIC_EAS_PROJECT_ID` dans `.env` (UUID projet Expo / EAS)
+- **EAS Dev Build** sur device physique (`eas build --profile development`) — Expo Go et simulateur ne garantissent pas un token projet
+- Certificats APNs (iOS) / FCM (Android) configurés côté EAS
+
+```bash
+# Une fois le projet Expo lié
+eas build --profile development --platform ios   # ou android
+```
+
+**Flow** : consent (notifications ON) → permission popup → token → row `push_tokens` → inbox. Relancer l’app (stack main) resynchronise le token et met à jour `last_seen_at`.
+
+**Test manuel** :
+
+```sql
+select user_id, platform, left(expo_push_token, 20) as token_preview, last_seen_at
+from push_tokens where user_id = '<uuid>';
+```
+
+Si permission OS refusée : inbox OK, `user_preferences.notifications_enabled` repasse à `false`.
+
+**Web / simulateur** : skip silencieux, pas de crash.
+
+## Phase F (suite)
+
+À venir : Edge Functions `schedule-deliveries` + `send-push` + cron pour envoyer les premières push.

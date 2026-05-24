@@ -2,8 +2,15 @@ import "react-native-reanimated";
 
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import { useEffect } from "react";
+
+import { configureNotifications } from "@/lib/notifications";
 
 export default function RootLayout() {
+  useEffect(() => {
+    configureNotifications();
+  }, []);
+
   return (
     <>
       <StatusBar style="auto" />

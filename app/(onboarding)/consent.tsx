@@ -5,6 +5,7 @@ import { StyleSheet, Switch, Text, View } from "react-native";
 import { OnboardingScreen } from "@/components/onboarding/OnboardingScreen";
 import { useOnboarding } from "@/context/OnboardingContext";
 import { completeOnboarding } from "@/lib/onboarding";
+import { registerPushToken } from "@/lib/notifications";
 import { getSupabase } from "@/lib/supabase";
 
 export default function ConsentScreen() {
@@ -33,6 +34,11 @@ export default function ConsentScreen() {
       }
 
       await completeOnboarding(userId, draft);
+
+      if (draft.notificationsEnabled) {
+        await registerPushToken(userId);
+      }
+
       router.replace("/(main)/inbox");
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not finish onboarding.";

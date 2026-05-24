@@ -24,6 +24,14 @@ export default (): ExpoConfig => ({
     output: "static",
     favicon: "./assets/images/favicon.png",
   },
+  experiments: {
+    typedRoutes: true,
+  },
+  extra: {
+    eas: {
+      projectId: process.env.EXPO_PUBLIC_EAS_PROJECT_ID,
+    },
+  },
   plugins: [
     "expo-router",
     [
@@ -36,8 +44,12 @@ export default (): ExpoConfig => ({
     ],
     "expo-secure-store",
     "expo-localization",
+    [
+      "expo-notifications",
+      {
+        icon: "./assets/images/icon.png",
+        color: "#ffffff",
+      },
+    ],
   ],
-  experiments: {
-    typedRoutes: true,
-  },
 });
