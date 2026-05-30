@@ -1,19 +1,475 @@
 {
   "missions": [
     {
-      "id": "a1f2e3d4-c5b6-4789-a012-345678901101",
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010001",
       "category": "social",
-      "teaser": "Someone might love hearing from you today.",
-      "title": "Mission: reach out",
-      "body": "Think of one person you genuinely miss. Send them a short message — not a meme, not a link. Just you, checking in.",
+      "teaser": "There's someone you only react to. Try words instead.",
+      "title": "Mission: say something real",
+      "body": "Open a chat with someone you usually only send emojis or likes to. Write one honest sentence about your day or theirs. Stop after that.",
       "locale": "en"
     },
     {
-      "id": "a1f2e3d4-c5b6-4789-a012-345678901102",
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010003",
       "category": "social",
-      "teaser": "Your voice counts more than a tap.",
-      "title": "Mission: use your voice",
-      "body": "Call someone you usually only text. It can be two minutes. Ask how they are and really listen.",
+      "teaser": "Someone in your contacts deserves a voice note.",
+      "title": "Mission: send your voice",
+      "body": "Record a short voice message for one person you trust. Keep it simple: a memory, a thank you, or a quick hello. You do not need to continue the conversation.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010004",
+      "category": "social",
+      "teaser": "A familiar face is waiting for recognition.",
+      "title": "Mission: acknowledge someone",
+      "body": "Make eye contact with someone you see often but rarely speak to — a neighbor, cashier, receptionist, or barista. Say hello like you mean it. Stop there if you want.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010005",
+      "category": "social",
+      "teaser": "Ask a question with no practical purpose.",
+      "title": "Mission: ask something human",
+      "body": "During your next conversation, ask someone what they've been enjoying lately. Don't turn it into advice or recommendations. Just stay curious for two minutes.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010006",
+      "category": "social",
+      "teaser": "A compliment is sitting unsent.",
+      "title": "Mission: say the nice thing",
+      "body": "Think of one specific thing you appreciate about someone. Tell them directly in one sentence. No extra explanation needed.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010008",
+      "category": "social",
+      "teaser": "Call someone without needing anything.",
+      "title": "Mission: unexpected call",
+      "body": "Phone one person you usually only text. Keep the call under five minutes if you want. The point is hearing a voice.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010009",
+      "category": "social",
+      "teaser": "There's a tiny favor you can offer.",
+      "title": "Mission: make life lighter",
+      "body": "Ask someone nearby if they need help carrying, moving, or reaching something small. Accept yes or no without insisting. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010010",
+      "category": "social",
+      "teaser": "One message can reopen a quiet friendship.",
+      "title": "Mission: reopen the thread",
+      "body": "Send a short message to someone you haven't spoken to in months. Mention a memory or ask how they've been lately. You don't need to explain the silence.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010012",
+      "category": "social",
+      "teaser": "Your future self might remember this stranger.",
+      "title": "Mission: ask for a recommendation",
+      "body": "Ask someone nearby for a recommendation — a bakery item, a park, a movie, anything local and simple. Thank them and move on. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010013",
+      "category": "social",
+      "teaser": "Sit closer to people today.",
+      "title": "Mission: choose proximity",
+      "body": "In a public place, sit near other people instead of automatically choosing the isolated corner. Stay present for a few minutes. No conversation required.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010014",
+      "category": "social",
+      "teaser": "There's a thank-you you forgot to send.",
+      "title": "Mission: close the loop",
+      "body": "Message someone who helped you recently, even in a small way. Be specific about what you appreciated. Stop after sending it.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010015",
+      "category": "social",
+      "teaser": "Share a memory instead of an update.",
+      "title": "Mission: bring something back",
+      "body": "Text someone a memory you still laugh about or think about sometimes. Don't add a photo or link. Just the moment itself.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010016",
+      "category": "social",
+      "teaser": "You can make someone feel noticed in 10 seconds.",
+      "title": "Mission: use their name",
+      "body": "During your next interaction, say the person's name out loud once if you know it. Keep the rest natural. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010017",
+      "category": "social",
+      "teaser": "A tiny invitation counts.",
+      "title": "Mission: ask someone along",
+      "body": "Invite someone to join you for a very small thing today — a coffee run, short walk, or quick errand. Keep it low pressure. One ask is enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010018",
+      "category": "social",
+      "teaser": "Be the first person to wave.",
+      "title": "Mission: start the hello",
+      "body": "When you pass someone familiar today, greet them before they greet you. Keep walking if you want afterward. Stop there.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010019",
+      "category": "social",
+      "teaser": "One honest answer could change the tone.",
+      "title": "Mission: answer properly",
+      "body": "The next time someone asks how you are, answer with one real sentence instead of autopilot. Nothing dramatic required. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010021",
+      "category": "social",
+      "teaser": "Someone around you has a story you'll never hear.",
+      "title": "Mission: small curiosity",
+      "body": "Ask a simple follow-up question during a casual interaction today. Stay with the answer instead of turning back to yourself immediately. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010022",
+      "category": "social",
+      "teaser": "An old friend might answer faster than you think.",
+      "title": "Mission: random check-in",
+      "body": "Choose one person you haven't thought about in a while. Send a short message asking what life has been like lately. Stop after pressing send.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010024",
+      "category": "social",
+      "teaser": "You don't need a reason to reach out.",
+      "title": "Mission: send the first text",
+      "body": "Start a conversation today without needing news, plans, or logistics. A simple \"thought of you\" is enough. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010025",
+      "category": "social",
+      "teaser": "Notice who always initiates with you.",
+      "title": "Mission: reverse the pattern",
+      "body": "Think of someone who usually reaches out first. Contact them before they contact you this time. Keep it short and easy.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010032",
+      "category": "social",
+      "teaser": "You already know more neighbors than you think.",
+      "title": "Mission: hallway hello",
+      "body": "If you cross paths with a neighbor today, pause for one extra sentence instead of a quick nod. Keep it casual and brief. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010033",
+      "category": "social",
+      "teaser": "One person deserves your full attention for 2 minutes.",
+      "title": "Mission: listen without fixing",
+      "body": "During one conversation today, resist giving advice or turning the topic back to yourself. Just listen until the other person finishes. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010035",
+      "category": "social",
+      "teaser": "A real laugh sounds better out loud.",
+      "title": "Mission: share something funny",
+      "body": "Tell someone about a genuinely funny thing that happened recently instead of sending a clip or meme. Keep it imperfect. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010036",
+      "category": "social",
+      "teaser": "Notice who makes your days easier.",
+      "title": "Mission: appreciate the regulars",
+      "body": "Thank someone whose work quietly supports your routine — cleaner, driver, receptionist, cashier, delivery worker. Keep it direct and simple. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010037",
+      "category": "social",
+      "teaser": "A question can change a whole mood.",
+      "title": "Mission: ask about today",
+      "body": "Ask someone what the best part of their day has been so far. Listen to the first answer without rushing onward. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010039",
+      "category": "social",
+      "teaser": "There's probably a local regular you recognize.",
+      "title": "Mission: become familiar",
+      "body": "Return to a place you visit sometimes and stay long enough for one brief interaction with the people there. Recognition counts. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010040",
+      "category": "social",
+      "teaser": "Try one tiny act of trust.",
+      "title": "Mission: ask for help",
+      "body": "Ask someone for a small favor today — directions, an opinion, help opening something, a recommendation. Let them help if they want to. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010042",
+      "category": "social",
+      "teaser": "Someone in your life needs encouragement.",
+      "title": "Mission: back someone up",
+      "body": "Send a message reminding someone that they're doing better than they think at something specific. Keep it grounded and short. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010043",
+      "category": "social",
+      "teaser": "You can change the energy of a room quietly.",
+      "title": "Mission: arrive open",
+      "body": "When entering a shared space today, look up instead of immediately disappearing into your own world. A smile or nod is enough. Stop there.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010044",
+      "category": "social",
+      "teaser": "Reconnect through a shared memory.",
+      "title": "Mission: remember together",
+      "body": "Message someone about a place, song, meal, or moment you both experienced. Let the memory sit without forcing a long conversation. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010046",
+      "category": "social",
+      "teaser": "Someone would probably answer if you invited them.",
+      "title": "Mission: make a simple plan",
+      "body": "Invite one person to do something low-effort this week — coffee, lunch, a walk, browsing a shop. Keep the invitation casual. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010047",
+      "category": "social",
+      "teaser": "Try noticing the quiet people.",
+      "title": "Mission: include someone",
+      "body": "During a group moment today, direct one question toward the quieter person in the room. Give them space to answer. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678010049",
+      "category": "social",
+      "teaser": "Your attention is useful to someone.",
+      "title": "Mission: notice effort",
+      "body": "Tell someone you noticed a specific effort they made recently — cooking, organizing, showing up, helping, trying. Keep it sincere and brief. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020001",
+      "category": "nature",
+      "teaser": "The sky is doing something right now.",
+      "title": "Mission: look up",
+      "body": "Step outside or find a window. Spend one minute looking only at the sky and notice three different shades or movements. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020002",
+      "category": "nature",
+      "teaser": "There's a tree you pass without seeing.",
+      "title": "Mission: meet a tree",
+      "body": "Find the nearest tree, even a tiny city one. Stand near it for 30 seconds and notice the shape of its bark or branches. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020003",
+      "category": "nature",
+      "teaser": "Open a door. Hear the city differently.",
+      "title": "Mission: sound check",
+      "body": "Pause outside for two minutes without music or conversation. Count five separate sounds you can hear at the same time. You can head back in after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020004",
+      "category": "nature",
+      "teaser": "The weather has a texture today.",
+      "title": "Mission: feel the air",
+      "body": "Step outside for one minute — even just the sidewalk outside your building. Pay attention to the air on your face and hands. Warm, damp, sharp, heavy — describe it silently to yourself. Stop there.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020005",
+      "category": "nature",
+      "teaser": "Find one living thing you usually ignore.",
+      "title": "Mission: tiny life",
+      "body": "Notice one small living thing nearby — moss, weeds, insects, pigeons, anything. Watch it closely for 60 seconds without taking a photo. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020006",
+      "category": "nature",
+      "teaser": "Walk slower for exactly one block.",
+      "title": "Mission: slower route",
+      "body": "During your next walk, slow your pace for one block. Notice what changes when you stop rushing past the street around you. Stop after that block.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020007",
+      "category": "nature",
+      "teaser": "There's movement above you right now.",
+      "title": "Mission: cloud watch",
+      "body": "Look at the clouds for two minutes, even if there are only a few. Follow their direction and speed without doing anything else. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020008",
+      "category": "nature",
+      "teaser": "Borrow five minutes from the evening light.",
+      "title": "Mission: sunset pause",
+      "body": "If the timing works today, step outside near sunset. Watch the light change on buildings, pavement, or faces for five quiet minutes. Head back in whenever you're ready.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020009",
+      "category": "nature",
+      "teaser": "The ground under you has details.",
+      "title": "Mission: pavement study",
+      "body": "Walk slowly for two minutes while looking down instead of ahead. Notice cracks, leaves, reflections, or patterns in the ground. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020011",
+      "category": "nature",
+      "teaser": "Notice what survives in your neighborhood.",
+      "title": "Mission: urban green",
+      "body": "Find one patch of green nearby — a planter, balcony vine, park edge, anything. Spend a minute looking at how it fits into the street around it. Stop there.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020013",
+      "category": "nature",
+      "teaser": "Find the quietest outdoor spot nearby.",
+      "title": "Mission: quiet corner",
+      "body": "Walk until you find a slightly calmer outdoor spot — a bench, side street, courtyard, or corner. Stay there for three minutes and let the street noise settle around you. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020014",
+      "category": "nature",
+      "teaser": "Something outside is reflecting light.",
+      "title": "Mission: reflections",
+      "body": "Look for reflections outdoors — puddles, windows, metal, sunglasses, anything. Spend two minutes noticing how light changes surfaces. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020015",
+      "category": "nature",
+      "teaser": "Night air feels different.",
+      "title": "Mission: step into night",
+      "body": "Go outside after dark for five minutes if you can. Notice the sounds, temperature, and pace of the street at night compared to daytime. Head back in after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020016",
+      "category": "nature",
+      "teaser": "Watch wind without looking at the wind.",
+      "title": "Mission: moving things",
+      "body": "Find something the wind is affecting — leaves, clothes, flags, hair, water. Watch the movement for one minute. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020017",
+      "category": "nature",
+      "teaser": "Find one natural color today.",
+      "title": "Mission: color search",
+      "body": "Choose one color before stepping outside. Spend five minutes spotting that color in plants, sky, stone, water, or light around you. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020018",
+      "category": "nature",
+      "teaser": "There are birds somewhere nearby.",
+      "title": "Mission: listen for birds",
+      "body": "Open a window or go outside for two minutes. Listen carefully for bird sounds hidden under the rest of the city noise. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020019",
+      "category": "nature",
+      "teaser": "Sunlight lands differently every hour.",
+      "title": "Mission: follow the light",
+      "body": "Notice one patch of sunlight indoors or outside. Watch how it shifts or changes shape for a minute before moving on. Stop there.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020020",
+      "category": "nature",
+      "teaser": "Find water, even a tiny bit.",
+      "title": "Mission: water nearby",
+      "body": "Look for water around you — a fountain, puddle, river, rain gutter, coffee steam, anything. Spend one minute paying attention to how it moves. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020021",
+      "category": "nature",
+      "teaser": "Take the slightly greener path.",
+      "title": "Mission: detour through green",
+      "body": "On your next short walk, choose the route with more trees or open sky, even if it's only one extra minute. Notice how the space feels different. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020022",
+      "category": "nature",
+      "teaser": "Stand still outside for longer than usual.",
+      "title": "Mission: pause outdoors",
+      "body": "Find a place outside to stand still for three minutes. Let people, bikes, clouds, and sounds move around you while you stay put. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020023",
+      "category": "nature",
+      "teaser": "Morning air has its own personality.",
+      "title": "Mission: early air",
+      "body": "If you're awake early enough, step outside for two minutes before the day fully starts. Notice what the street sounds like before it fills up. Head back in after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020024",
+      "category": "nature",
+      "teaser": "Look for nature in the wrong places.",
+      "title": "Mission: unexpected green",
+      "body": "Find one natural thing growing or existing where it probably wasn't planned to — cracks, walls, rooftops, fences. Give it a full minute of attention. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020025",
+      "category": "nature",
+      "teaser": "The temperature changes block by block.",
+      "title": "Mission: temperature map",
+      "body": "During a short walk, notice where the air gets cooler, warmer, shaded, or windy. Pay attention for five minutes, then move on with your day.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020026",
+      "category": "nature",
+      "teaser": "Touch something natural today.",
+      "title": "Mission: texture check",
+      "body": "Touch bark, stone, grass, leaves, or even rough concrete outside. Spend 30 seconds noticing texture instead of rushing past it. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020029",
+      "category": "nature",
+      "teaser": "Notice shadows instead of objects.",
+      "title": "Mission: shadow watch",
+      "body": "Spend two minutes paying attention only to shadows outdoors. Watch how they stretch, overlap, or move as people and light shift around you. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678020030",
+      "category": "nature",
+      "teaser": "There's weather happening even on ordinary days.",
+      "title": "Mission: today's atmosphere",
+      "body": "Step outside for one minute. Notice whether today feels heavy, bright, soft, restless, or clear — in the air, the light, the pace around you. Stop there.",
       "locale": "en"
     },
     {
@@ -33,19 +489,211 @@
       "locale": "en"
     },
     {
-      "id": "a1f2e3d4-c5b6-4789-a012-345678901105",
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030001",
       "category": "curiosity",
-      "teaser": "One question you’ve never asked.",
-      "title": "Mission: ask something new",
-      "body": "Ask someone a real question you’ve never asked them before — about their day, a memory, or what they’re excited about. Stay curious, not clever.",
+      "teaser": "There's a story hiding in an ordinary object.",
+      "title": "Mission: object detective",
+      "body": "Choose one everyday object near you. Study it for two minutes and list three details you had never noticed before. Invent one question about how it came to be there. That's enough.",
       "locale": "en"
     },
     {
-      "id": "a1f2e3d4-c5b6-4789-a012-345678901106",
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030002",
       "category": "curiosity",
-      "teaser": "Learn one small thing offline.",
-      "title": "Mission: a tiny discovery",
-      "body": "Learn one new fact without opening a feed — read a page of a book, a sign on the street, or ask a human. One fact. That’s enough.",
+      "teaser": "Ask a question you normally leave unasked.",
+      "title": "Mission: one real question",
+      "body": "The next time you speak with someone today, ask them about a hobby, skill, or routine they know well. Listen to the answer without changing the subject. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030003",
+      "category": "curiosity",
+      "teaser": "A sound nearby deserves your attention.",
+      "title": "Mission: follow a sound",
+      "body": "Pause for one minute and notice a sound in your surroundings. Trace where it might be coming from and what could be creating it. When your curiosity feels satisfied, stop.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030004",
+      "category": "curiosity",
+      "teaser": "One sign or label can open a rabbit hole.",
+      "title": "Mission: read the fine print",
+      "body": "Find a sign, label, plaque, or notice you usually ignore. Read every word. Notice one detail that changes how you see that place or object. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030005",
+      "category": "curiosity",
+      "teaser": "Take a different route with your eyes.",
+      "title": "Mission: look higher",
+      "body": "Walk a short distance or look out a window. Spend two minutes noticing what is above eye level—roofs, branches, wires, clouds, or architecture. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030006",
+      "category": "curiosity",
+      "teaser": "Something nearby has changed recently.",
+      "title": "Mission: spot the difference",
+      "body": "Look around a familiar room, street, yard, or path. Find one thing that wasn't there before or has shifted since you last paid attention. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030008",
+      "category": "curiosity",
+      "teaser": "Count something nobody usually counts.",
+      "title": "Mission: unusual tally",
+      "body": "Choose one thing around you—red doors, birds, parked bicycles, fence posts, or something else. Count them for two minutes. When the timer ends, you're done.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030009",
+      "category": "curiosity",
+      "teaser": "Your neighborhood has a tiny mystery.",
+      "title": "Mission: trace a clue",
+      "body": "Notice an object that seems out of place. Spend a few minutes imagining two possible explanations for how it got there. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030010",
+      "category": "curiosity",
+      "teaser": "Look for evidence of a hidden process.",
+      "title": "Mission: behind the scenes",
+      "body": "Find something being maintained, repaired, grown, cleaned, built, or organized. Observe it closely for a minute. Notice signs of the work behind it. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030011",
+      "category": "curiosity",
+      "teaser": "One shelf can teach you something.",
+      "title": "Mission: inspect a shelf",
+      "body": "Choose a shelf, cupboard, drawer, or storage space. Pick one item and wonder why it was kept. Follow that question for a few minutes, then stop.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030012",
+      "category": "curiosity",
+      "teaser": "Notice what repeats.",
+      "title": "Mission: find a pattern",
+      "body": "Look around your environment and identify a repeating shape, sound, color, or behavior. Spend two minutes tracking where else it appears. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030013",
+      "category": "curiosity",
+      "teaser": "A place you know has an overlooked corner.",
+      "title": "Mission: explore the edge",
+      "body": "Visit a familiar room, yard, hallway, or outdoor spot. Pay attention to the least-noticed corner for three minutes. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030014",
+      "category": "curiosity",
+      "teaser": "Borrow someone else's perspective.",
+      "title": "Mission: ask for a favorite",
+      "body": "Ask someone to tell you their favorite local place, object, view, or routine. Learn why they chose it. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030015",
+      "category": "curiosity",
+      "teaser": "Something old still has a secret.",
+      "title": "Mission: date an object",
+      "body": "Find an older item in your home or surroundings. Look for clues about when it was made or first used. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030016",
+      "category": "curiosity",
+      "teaser": "Change one angle. See what appears.",
+      "title": "Mission: new viewpoint",
+      "body": "Stand, sit, or crouch somewhere you usually pass through. Spend one minute observing from that different height. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030017",
+      "category": "curiosity",
+      "teaser": "What happens here when you're not looking?",
+      "title": "Mission: imagine the timeline",
+      "body": "Choose a place nearby. Picture what it looked like five years ago and what it might look like five years from now. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030018",
+      "category": "curiosity",
+      "teaser": "Read a name and wonder about it.",
+      "title": "Mission: notice names",
+      "body": "Look for a street name, building name, product name, or family name. Spend a few minutes guessing the story behind it before moving on. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030021",
+      "category": "curiosity",
+      "teaser": "Your hands know more than your eyes.",
+      "title": "Mission: texture survey",
+      "body": "Carefully touch three different surfaces around you. Compare their textures and notice which details are easiest to miss visually. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030022",
+      "category": "curiosity",
+      "teaser": "A routine path has a missing detail.",
+      "title": "Mission: reverse attention",
+      "body": "Walk a familiar route and look for what you normally ignore rather than what usually catches your eye. Notice three things. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030023",
+      "category": "curiosity",
+      "teaser": "Look for evidence, not answers.",
+      "title": "Mission: tiny investigation",
+      "body": "Choose a mark, track, crack, stain, or worn spot. Spend two minutes imagining what repeated action created it. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030024",
+      "category": "curiosity",
+      "teaser": "The weather is doing more than you think.",
+      "title": "Mission: weather clues",
+      "body": "Step outside or look through a window. Find three signs of today's weather besides temperature. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030025",
+      "category": "curiosity",
+      "teaser": "Find the oldest thing you can see.",
+      "title": "Mission: age hunt",
+      "body": "Look around your surroundings and choose the object, structure, or tree that seems oldest. Notice the clues that led you there. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030026",
+      "category": "curiosity",
+      "teaser": "One minute of listening can reveal a map.",
+      "title": "Mission: sound map",
+      "body": "Close your eyes for sixty seconds. Identify as many distinct sounds as you can and imagine where each one is coming from. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030028",
+      "category": "curiosity",
+      "teaser": "Ask about a first time.",
+      "title": "Mission: first memories",
+      "body": "Talk with someone and ask about the first time they learned, tried, or experienced something important to them. Listen to the story. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030029",
+      "category": "curiosity",
+      "teaser": "Choose a direction you rarely notice.",
+      "title": "Mission: look behind you",
+      "body": "Turn around and study the space behind where you usually sit, stand, or wait. Spend one minute noticing details you normally miss. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678030030",
+      "category": "curiosity",
+      "teaser": "There's a question hiding in plain sight.",
+      "title": "Mission: wonder aloud",
+      "body": "Write down one question about something you encounter today. Don't answer it yet. Let the question exist for a few minutes, then move on.",
       "locale": "en"
     },
     {
