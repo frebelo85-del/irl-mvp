@@ -9,11 +9,6 @@
       "distribution": "internal",
       "env": {
         "EXPO_PUBLIC_EAS_PROJECT_ID": "8e6ab3d4-e205-4d94-b9dd-89e3cdd87862"
-      },
-      "install": {
-        "npm": {
-          "installArgs": ["--omit=dev"]
-        }
       }
     },
     "preview": {
