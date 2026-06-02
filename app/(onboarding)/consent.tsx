@@ -3,9 +3,12 @@ import { useState } from "react";
 import { StyleSheet, Switch, Text, View } from "react-native";
 
 import { OnboardingScreen } from "@/components/onboarding/OnboardingScreen";
+import { switchThumbColor, switchTrackColors } from "@/constants/switch";
+import { theme } from "@/constants/theme";
 import { useOnboarding } from "@/context/OnboardingContext";
 import { completeOnboarding } from "@/lib/onboarding";
 import { registerPushToken } from "@/lib/notifications";
+import { scheduleWelcomeDelivery } from "@/lib/welcome-delivery";
 import { getSupabase } from "@/lib/supabase";
 
 export default function ConsentScreen() {
@@ -39,6 +42,8 @@ export default function ConsentScreen() {
         await registerPushToken(userId);
       }
 
+      await scheduleWelcomeDelivery();
+
       router.replace("/(main)/inbox");
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not finish onboarding.";
@@ -50,7 +55,7 @@ export default function ConsentScreen() {
 
   return (
     <OnboardingScreen
-      step={3}
+      step={2}
       title="Stay in the loop — on your terms"
       subtitle="We won't spam you. Sometimes you may not hear from us for a day or two — that's intentional."
       ctaLabel="Get started"
@@ -69,6 +74,8 @@ export default function ConsentScreen() {
             value={draft.notificationsEnabled}
             onValueChange={setNotificationsEnabled}
             disabled={loading}
+            trackColor={switchTrackColors}
+            thumbColor={switchThumbColor}
           />
         </View>
       </View>
@@ -78,7 +85,7 @@ export default function ConsentScreen() {
           <View style={styles.rowText}>
             <Text style={styles.rowTitle}>Analytics</Text>
             <Text style={styles.rowBody}>
-              Help us improve IRL with anonymous usage data. Optional and separate from
+              Help us improve Alica with anonymous usage data. Optional and separate from
               notifications.
             </Text>
           </View>
@@ -86,6 +93,8 @@ export default function ConsentScreen() {
             value={draft.analyticsConsent}
             onValueChange={setAnalyticsConsent}
             disabled={loading}
+            trackColor={switchTrackColors}
+            thumbColor={switchThumbColor}
           />
         </View>
       </View>
@@ -101,11 +110,11 @@ export default function ConsentScreen() {
 
 const styles = StyleSheet.create({
   card: {
-    padding: 16,
-    borderRadius: 12,
-    backgroundColor: "#fff",
+    padding: theme.spacing.screen,
+    borderRadius: theme.radius,
+    backgroundColor: theme.surface,
     borderWidth: 1,
-    borderColor: "#e5e7eb",
+    borderColor: theme.border,
   },
   row: {
     flexDirection: "row",
@@ -118,24 +127,24 @@ const styles = StyleSheet.create({
   rowTitle: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#111",
+    color: theme.text,
     marginBottom: 4,
   },
   rowBody: {
     fontSize: 14,
-    color: "#6b7280",
+    color: theme.textSecondary,
     lineHeight: 20,
   },
   errorBox: {
     padding: 12,
     borderRadius: 8,
-    backgroundColor: "#fef2f2",
+    backgroundColor: theme.errorBg,
     borderWidth: 1,
-    borderColor: "#fecaca",
+    borderColor: theme.errorBorder,
   },
   errorText: {
     fontSize: 14,
-    color: "#991b1b",
+    color: theme.errorDark,
     lineHeight: 20,
   },
 });

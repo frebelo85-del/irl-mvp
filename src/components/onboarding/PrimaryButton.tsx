@@ -8,6 +8,8 @@ import {
   type ViewStyle,
 } from "react-native";
 
+import { theme } from "@/constants/theme";
+
 type PrimaryButtonProps = Omit<PressableProps, "style"> & {
   label: string;
   loading?: boolean;
@@ -36,7 +38,7 @@ export function PrimaryButton({
       {...rest}
     >
       {loading ? (
-        <ActivityIndicator color="#fff" />
+        <ActivityIndicator color={theme.onPrimary} />
       ) : (
         <Text style={[styles.label, isDisabled && styles.labelDisabled]}>{label}</Text>
       )}
@@ -46,8 +48,8 @@ export function PrimaryButton({
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "#111827",
-    borderRadius: 12,
+    backgroundColor: theme.primaryStrong,
+    borderRadius: theme.radius,
     paddingVertical: 16,
     paddingHorizontal: 24,
     alignItems: "center",
@@ -55,17 +57,17 @@ const styles = StyleSheet.create({
     minHeight: 52,
   },
   buttonDisabled: {
-    backgroundColor: "#d1d5db",
+    backgroundColor: theme.disabled,
   },
   buttonPressed: {
     opacity: 0.9,
   },
   label: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "600",
+    color: theme.onPrimary,
+    fontSize: theme.typography.button.fontSize,
+    fontWeight: theme.typography.button.fontWeight,
   },
   labelDisabled: {
-    color: "#9ca3af",
+    color: theme.textTertiary,
   },
 });

@@ -1,5 +1,6 @@
 import * as Localization from "expo-localization";
 
+import { ALL_MISSION_CATEGORY_VALUES } from "@/constants/categories";
 import { AuthConfigError } from "@/lib/auth";
 import { getSupabase } from "@/lib/supabase";
 import type { OnboardingDraft } from "@/types/preferences";
@@ -24,9 +25,6 @@ export function getDeviceTimezone(): string {
 }
 
 function validateDraft(draft: OnboardingDraft): void {
-  if (draft.categories.length < 2) {
-    throw new Error("Select at least 2 categories.");
-  }
   if (
     draft.activeHourStart < 0 ||
     draft.activeHourStart > 23 ||
@@ -59,7 +57,7 @@ export async function completeOnboarding(
 
   const { error: prefsError } = await supabase.from("user_preferences").insert({
     user_id: userId,
-    categories: draft.categories,
+    categories: ALL_MISSION_CATEGORY_VALUES,
     active_hour_start: draft.activeHourStart,
     active_hour_end: draft.activeHourEnd,
     frequency: draft.frequency,

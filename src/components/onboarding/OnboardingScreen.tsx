@@ -3,9 +3,10 @@ import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { PrimaryButton } from "@/components/onboarding/PrimaryButton";
+import { theme } from "@/constants/theme";
 
 type OnboardingScreenProps = {
-  step: 1 | 2 | 3;
+  step: 1 | 2;
   title: string;
   subtitle?: string;
   children: ReactNode;
@@ -33,7 +34,7 @@ export function OnboardingScreen({
         contentContainerStyle={styles.scroll}
         keyboardShouldPersistTaps="handled"
       >
-        <Text style={styles.step}>Step {step} of 3</Text>
+        <Text style={styles.step}>Step {step} of 2</Text>
         <Text style={styles.title}>{title}</Text>
         {subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
         <View style={styles.body}>{children}</View>
@@ -53,33 +54,30 @@ export function OnboardingScreen({
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: "#f8f9fa",
+    backgroundColor: theme.background,
   },
   scroll: {
     flexGrow: 1,
-    paddingHorizontal: 24,
+    paddingHorizontal: theme.spacing.screenLarge,
     paddingTop: 8,
     paddingBottom: 24,
   },
   step: {
-    fontSize: 13,
-    fontWeight: "600",
-    color: "#6b7280",
+    ...theme.typography.step,
+    color: theme.textSecondary,
     marginBottom: 8,
     textTransform: "uppercase",
     letterSpacing: 0.5,
   },
   title: {
-    fontSize: 26,
-    fontWeight: "700",
-    color: "#111",
+    ...theme.typography.pageTitle,
+    color: theme.text,
     marginBottom: 8,
-    lineHeight: 32,
   },
   subtitle: {
-    fontSize: 15,
-    color: "#374151",
-    lineHeight: 22,
+    fontSize: theme.typography.body.fontSize,
+    color: theme.textBody,
+    lineHeight: theme.typography.body.lineHeight,
     marginBottom: 20,
   },
   body: {
@@ -87,10 +85,10 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   footer: {
-    paddingHorizontal: 24,
+    paddingHorizontal: theme.spacing.screenLarge,
     paddingTop: 12,
     borderTopWidth: 1,
-    borderTopColor: "#e5e7eb",
-    backgroundColor: "#f8f9fa",
+    borderTopColor: theme.border,
+    backgroundColor: theme.background,
   },
 });

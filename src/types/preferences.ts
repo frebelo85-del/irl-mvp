@@ -1,3 +1,5 @@
+import { ALL_MISSION_CATEGORY_VALUES } from "@/constants/categories";
+
 /** Values stored in `public.mission_category` enum (lowercase). */
 export type MissionCategory =
   | "social"
@@ -32,7 +34,7 @@ export type OnboardingDraft = {
 };
 
 export const DEFAULT_ONBOARDING_DRAFT: OnboardingDraft = {
-  categories: [],
+  categories: [...ALL_MISSION_CATEGORY_VALUES],
   activeHourStart: 9,
   activeHourEnd: 22,
   frequency: "low",

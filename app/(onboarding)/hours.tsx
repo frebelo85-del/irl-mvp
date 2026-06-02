@@ -1,8 +1,15 @@
 import { router } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useState } from "react";
+import { Alert, Pressable, StyleSheet, Text, View } from "react-native";
 
 import { OnboardingScreen } from "@/components/onboarding/OnboardingScreen";
+import { PrimaryButton } from "@/components/onboarding/PrimaryButton";
+import { theme } from "@/constants/theme";
 import { useOnboarding } from "@/context/OnboardingContext";
+import {
+  isAppleSignInAvailable,
+  restoreWithApple,
+} from "@/lib/auth-link";
 import type { FrequencyTier } from "@/types/preferences";
 
 const HOURS = Array.from({ length: 24 }, (_, i) => i);
@@ -76,18 +83,55 @@ export default function HoursScreen() {
     setActiveHourEnd,
     setFrequency,
   } = useOnboarding();
+  const [restoring, setRestoring] = useState(false);
+  const [restoreError, setRestoreError] = useState<string | null>(null);
 
   const canContinue = draft.activeHourStart !== draft.activeHourEnd;
 
+  async function handleRestore() {
+    setRestoring(true);
+    setRestoreError(null);
+    try {
+      const message = await restoreWithApple();
+      Alert.alert("Restore", message);
+    } catch (err) {
+      const msg =
+        err instanceof Error ? err.message : "Could not restore progress.";
+      if (msg.includes("cancelled")) {
+        setRestoreError(null);
+      } else {
+        setRestoreError(msg);
+      }
+    } finally {
+      setRestoring(false);
+    }
+  }
+
   return (
     <OnboardingScreen
-      step={2}
+      step={1}
       title="When should we reach you?"
       subtitle="Nudges only land between these hours — your local time."
       ctaLabel="Continue"
       ctaDisabled={!canContinue}
+      ctaLoading={restoring}
       onContinue={() => router.push("/(onboarding)/consent")}
     >
+      {isAppleSignInAvailable() ? (
+        <View style={styles.restoreBlock}>
+          <Text style={styles.restoreLead}>
+            Already saved progress on another device?
+          </Text>
+          <PrimaryButton
+            label="Restore with Apple"
+            loading={restoring}
+            onPress={() => void handleRestore()}
+          />
+          {restoreError ? (
+            <Text style={styles.restoreError}>{restoreError}</Text>
+          ) : null}
+        </View>
+      ) : null}
       <HourPicker
         label="From"
         value={draft.activeHourStart}
@@ -120,13 +164,31 @@ export default function HoursScreen() {
 }
 
 const styles = StyleSheet.create({
+  restoreBlock: {
+    marginBottom: 16,
+    padding: 14,
+    borderRadius: theme.radius,
+    backgroundColor: theme.surface,
+    borderWidth: 1,
+    borderColor: theme.border,
+    gap: 10,
+  },
+  restoreLead: {
+    fontSize: 14,
+    color: theme.textBody,
+    lineHeight: 20,
+  },
+  restoreError: {
+    fontSize: 13,
+    color: theme.error,
+  },
   pickerBlock: {
     marginBottom: 8,
   },
   pickerLabel: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#374151",
+    color: theme.textBody,
     marginBottom: 8,
   },
   hourRow: {
@@ -139,19 +201,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: "#e5e7eb",
-    backgroundColor: "#fff",
+    borderColor: theme.border,
+    backgroundColor: theme.surface,
   },
   hourChipSelected: {
-    borderColor: "#111827",
-    backgroundColor: "#111827",
+    borderColor: theme.primary,
+    backgroundColor: theme.primaryMuted,
   },
   hourText: {
     fontSize: 13,
-    color: "#374151",
+    color: theme.textBody,
   },
   hourTextSelected: {
-    color: "#fff",
+    color: theme.text,
     fontWeight: "600",
   },
   freqBlock: {
@@ -160,27 +222,27 @@ const styles = StyleSheet.create({
   },
   freqOption: {
     padding: 16,
-    borderRadius: 12,
+    borderRadius: theme.radius,
     borderWidth: 1,
-    borderColor: "#e5e7eb",
-    backgroundColor: "#fff",
+    borderColor: theme.border,
+    backgroundColor: theme.surface,
   },
   freqOptionSelected: {
-    borderColor: "#111827",
-    backgroundColor: "#f3f4f6",
+    borderColor: theme.primary,
+    backgroundColor: theme.primaryMuted,
   },
   freqLabel: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#111",
+    color: theme.text,
     marginBottom: 4,
   },
   freqLabelSelected: {
-    color: "#111827",
+    color: theme.text,
   },
   freqDescription: {
     fontSize: 14,
-    color: "#6b7280",
+    color: theme.textSecondary,
     lineHeight: 20,
   },
 });

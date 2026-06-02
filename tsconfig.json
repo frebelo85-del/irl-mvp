@@ -13,5 +13,6 @@
     "expo-env.d.ts",
     "app/**/*.ts",
     "app/**/*.tsx"
-  ]
+  ],
+  "exclude": ["supabase/functions"]
 }

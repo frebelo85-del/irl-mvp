@@ -12,8 +12,19 @@ const repoRoot = join(__dirname, "..");
 const seedPath = join(repoRoot, "docs", "missions.seed.json");
 const outPath = join(repoRoot, "supabase", "migrations", "00000002_seed_missions.sql");
 
+const UUID_RE =
+  /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
 function sqlEscape(s) {
   return String(s).replaceAll("'", "''");
+}
+
+function assertValidUuid(id) {
+  if (!UUID_RE.test(id)) {
+    throw new Error(
+      `Invalid UUID "${id}" — last segment must be exactly 12 hex chars`,
+    );
+  }
 }
 
 function main() {
@@ -36,6 +47,7 @@ function main() {
       if (!id || !category || teaser == null || title == null || body == null) {
         throw new Error(`Mission missing fields: ${JSON.stringify(m)}`);
       }
+      assertValidUuid(id);
       const loc = locale ?? "en";
       return (
         `  ('${sqlEscape(id)}'::uuid` +

@@ -10,13 +10,11 @@ import {
 import {
   DEFAULT_ONBOARDING_DRAFT,
   type FrequencyTier,
-  type MissionCategory,
   type OnboardingDraft,
 } from "@/types/preferences";
 
 type OnboardingContextValue = {
   draft: OnboardingDraft;
-  toggleCategory: (category: MissionCategory) => void;
   setActiveHourStart: (hour: number) => void;
   setActiveHourEnd: (hour: number) => void;
   setFrequency: (frequency: FrequencyTier) => void;
@@ -28,16 +26,6 @@ const OnboardingContext = createContext<OnboardingContextValue | null>(null);
 
 export function OnboardingProvider({ children }: { children: ReactNode }) {
   const [draft, setDraft] = useState<OnboardingDraft>(DEFAULT_ONBOARDING_DRAFT);
-
-  const toggleCategory = useCallback((category: MissionCategory) => {
-    setDraft((prev) => {
-      const selected = prev.categories.includes(category);
-      const categories = selected
-        ? prev.categories.filter((c) => c !== category)
-        : [...prev.categories, category];
-      return { ...prev, categories };
-    });
-  }, []);
 
   const setActiveHourStart = useCallback((hour: number) => {
     setDraft((prev) => ({ ...prev, activeHourStart: hour }));
@@ -62,7 +50,6 @@ export function OnboardingProvider({ children }: { children: ReactNode }) {
   const value = useMemo(
     () => ({
       draft,
-      toggleCategory,
       setActiveHourStart,
       setActiveHourEnd,
       setFrequency,
@@ -71,7 +58,6 @@ export function OnboardingProvider({ children }: { children: ReactNode }) {
     }),
     [
       draft,
-      toggleCategory,
       setActiveHourStart,
       setActiveHourEnd,
       setFrequency,

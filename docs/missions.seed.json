@@ -697,11 +697,459 @@
       "locale": "en"
     },
     {
-      "id": "a1f2e3d4-c5b6-4789-a012-345678901107",
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040001",
       "category": "adventure",
-      "teaser": "Change the route. Change the day.",
-      "title": "Mission: take a different path",
-      "body": "On your next walk or commute, take one different turn — even a small one. Pay attention to what’s different.",
+      "title": "Mission: the unfamiliar turn",
+      "body": "The next time you head somewhere nearby, take one street, path, or lane you normally ignore. Follow it for a few minutes and notice what changes. Turn back whenever you like. That's enough.",
+      "locale": "en",
+      "teaser": "There's a street you always ignore."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040002",
+      "category": "adventure",
+      "title": "Mission: route detour",
+      "body": "While walking, add a small loop to your usual route. Stay curious instead of efficient. Stop after one extra block, bend, or stretch of road.",
+      "locale": "en",
+      "teaser": "Efficiency can wait one block."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040003",
+      "category": "adventure",
+      "title": "Mission: new doorway",
+      "body": "Visit a familiar place and enter from a different side or approach if possible. Notice what catches your attention first. Stop after that.",
+      "locale": "en",
+      "teaser": "Same place. Different entrance."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040004",
+      "category": "adventure",
+      "title": "Mission: follow a direction",
+      "body": "Step outside or to a window. Choose left, right, or straight without overthinking it, then explore that direction for five minutes. Head back whenever you're ready.",
+      "locale": "en",
+      "teaser": "Left, right, or straight — then go."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040005",
+      "category": "adventure",
+      "title": "Mission: chase a landmark",
+      "body": "Spot something in the distance—a tree, roofline, fence, hill, or sign. Move toward it if it's safely reachable nearby. Once you arrive, you're done.",
+      "locale": "en",
+      "teaser": "Something in the distance is worth reaching."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040006",
+      "category": "adventure",
+      "title": "Mission: slower than usual",
+      "body": "Walk more slowly than you normally would for three minutes. Let details appear that usually blur past. Return to your normal pace after that.",
+      "locale": "en",
+      "teaser": "Walk half as fast for three minutes."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040007",
+      "category": "adventure",
+      "title": "Mission: new vantage point",
+      "body": "Find a spot nearby where you don't usually stand—another corner of a yard, a different bench, the far side of a room. Stay there for two minutes and take in the scene. That's enough.",
+      "locale": "en",
+      "teaser": "Stand somewhere you never choose."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040009",
+      "category": "adventure",
+      "title": "Mission: different timing",
+      "body": "Visit a nearby spot you know well at a time you don't usually see it. Notice how the light, sounds, or activity differ. Stay only a few minutes.",
+      "locale": "en",
+      "teaser": "See a familiar place at an unusual hour."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040010",
+      "category": "adventure",
+      "title": "Mission: follow curiosity",
+      "body": "Start moving with no destination beyond your immediate area. When something genuinely catches your attention, go closer and examine it for a minute. Stop after that.",
+      "locale": "en",
+      "teaser": "No destination — only what pulls you."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040011",
+      "category": "adventure",
+      "title": "Mission: indoor expedition",
+      "body": "Choose a room you use every day. Spend five minutes noticing corners, shelves, or objects you've stopped seeing. End when you've found three surprises.",
+      "locale": "en",
+      "teaser": "Your everyday room still has surprises."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040012",
+      "category": "adventure",
+      "title": "Mission: no destination",
+      "body": "Head outside or into a shared space without a plan. Let each small decision come from whatever interests you next. Stop after ten minutes.",
+      "locale": "en",
+      "teaser": "Ten minutes with nowhere to be."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040013",
+      "category": "adventure",
+      "title": "Mission: time traveler",
+      "body": "Look around your surroundings and search for something that seems older than everything else nearby. Spend a moment imagining what it has witnessed. That's enough.",
+      "locale": "en",
+      "teaser": "Find something older than everything else."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040014",
+      "category": "adventure",
+      "title": "Mission: ask the place",
+      "body": "Wherever you are, ask yourself: 'What's the most interesting thing here?' Go investigate your answer. Stop after a few minutes.",
+      "locale": "en",
+      "teaser": "Ask the place what's most interesting."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040015",
+      "category": "adventure",
+      "title": "Mission: cross over",
+      "body": "Move from one environment into another nearby: indoors to outdoors, pavement to grass, busy to quiet, sun to shade. Notice the shift. Stay with it for a minute.",
+      "locale": "en",
+      "teaser": "Step from one world into another nearby."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040017",
+      "category": "adventure",
+      "title": "Mission: scenic version",
+      "body": "Choose the less direct option for a short trip nearby. Pay attention to what appears because you weren't rushing. Return to normal after that.",
+      "locale": "en",
+      "teaser": "Take the long way on purpose."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040018",
+      "category": "adventure",
+      "title": "Mission: pause point",
+      "body": "Wander until you find a spot that makes you want to stop for thirty seconds. Stand there and take in the surroundings. Then continue or head home.",
+      "locale": "en",
+      "teaser": "Wander until somewhere makes you stop."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040019",
+      "category": "adventure",
+      "title": "Mission: edge of familiar",
+      "body": "Go to the furthest point nearby that still feels part of your everyday territory. Spend two minutes there. Turn back after that.",
+      "locale": "en",
+      "teaser": "Walk to the edge of your usual map."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040020",
+      "category": "adventure",
+      "title": "Mission: revisit briefly",
+      "body": "Return to a place you haven't visited in a while but can reach easily. Compare it with your memory. Stay only a few minutes.",
+      "locale": "en",
+      "teaser": "Somewhere you haven't been in a while."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040021",
+      "category": "adventure",
+      "title": "Mission: sound trail",
+      "body": "Notice a distant sound—a bird, machinery, voices, wind, or water. Move toward it if practical and safe. Stop when you've located the source or satisfied your curiosity.",
+      "locale": "en",
+      "teaser": "Follow a sound until you've found it."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040022",
+      "category": "adventure",
+      "title": "Mission: higher or lower",
+      "body": "Find a nearby spot slightly higher or lower than where you are now. Spend a moment observing from that new perspective. That's enough.",
+      "locale": "en",
+      "teaser": "Change your height for a new view."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040024",
+      "category": "adventure",
+      "title": "Mission: object expedition",
+      "body": "Choose one object you pass often outdoors or in a shared space. Walk over and inspect it more closely than usual. End once you've noticed three details.",
+      "locale": "en",
+      "teaser": "Inspect something you always pass."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040025",
+      "category": "adventure",
+      "title": "Mission: different seat",
+      "body": "Sit somewhere you don't normally choose—a different chair, bench, step, or patch of ground. Stay for three minutes and watch the world from there. Then move on.",
+      "locale": "en",
+      "teaser": "Sit where you never sit."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040026",
+      "category": "adventure",
+      "title": "Mission: follow the curve",
+      "body": "Seek out a winding path, road, hallway, or trail nearby. Follow it until the next bend or turn. Stop after seeing what's around it.",
+      "locale": "en",
+      "teaser": "Find a bend and see what's past it."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040027",
+      "category": "adventure",
+      "title": "Mission: match the rhythm",
+      "body": "Observe the pace of someone walking nearby, or imagine one if you're alone. Match that rhythm for one minute. Return to your own pace after that.",
+      "locale": "en",
+      "teaser": "Match someone's walking rhythm for one minute."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040028",
+      "category": "adventure",
+      "title": "Mission: tiny destination",
+      "body": "Choose something small you can see nearby—a flower, mailbox, stone, post, or gate. Make it your destination. Once you reach it, you're done.",
+      "locale": "en",
+      "teaser": "Pick the smallest visible target."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040029",
+      "category": "adventure",
+      "title": "Mission: one-square-meter safari",
+      "body": "Focus on a very small area around you, indoors or outdoors. Search it as if you're seeing it for the first time. Stop after two minutes.",
+      "locale": "en",
+      "teaser": "Two minutes inside one square meter."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678040030",
+      "category": "adventure",
+      "title": "Mission: close the distance",
+      "body": "Notice something you've only ever seen from afar in your area. Walk closer and examine it for a minute. That's enough for today.",
+      "locale": "en",
+      "teaser": "Close the gap on something you've only seen from afar."
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050001",
+      "category": "creativity",
+      "teaser": "A receipt, envelope, or scrap is enough.",
+      "title": "Mission: tiny collage",
+      "body": "Find three small scraps of paper from around you. Arrange them into a picture, pattern, or scene on a table. Change it once, then leave it. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050002",
+      "category": "creativity",
+      "teaser": "Give an ordinary object a secret history.",
+      "title": "Mission: object backstory",
+      "body": "Choose one object within reach. Invent a three-sentence story about where it came from before it reached you. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050003",
+      "category": "creativity",
+      "teaser": "Your voice can make something no one else can.",
+      "title": "Mission: hum a soundtrack",
+      "body": "Look out a window or around the room. Hum a short soundtrack for what you see, even if it sounds strange. Let it last one minute. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050004",
+      "category": "creativity",
+      "teaser": "Turn five words into something unexpected.",
+      "title": "Mission: five-word poem",
+      "body": "Pick five random words from signs, packaging, or memory. Arrange them into the shortest poem you can. Read it once and stop.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050005",
+      "category": "creativity",
+      "teaser": "Draw without looking down.",
+      "title": "Mission: blind sketch",
+      "body": "Choose a nearby object. Draw its outline without looking at the page while your hand moves. When you're done, put the pen down. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050006",
+      "category": "creativity",
+      "teaser": "One sound is waiting to become music.",
+      "title": "Mission: kitchen rhythm",
+      "body": "Tap two household items gently and listen to the different tones. Create a simple rhythm that lasts ten seconds. Repeat it once, then stop.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050007",
+      "category": "creativity",
+      "teaser": "A shadow can become a picture.",
+      "title": "Mission: trace a shape",
+      "body": "Find an interesting shadow or outline nearby. Trace it on paper or in the air with your finger. Add one detail and finish there.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050008",
+      "category": "creativity",
+      "teaser": "Borrow a color from the world around you.",
+      "title": "Mission: color hunt",
+      "body": "Notice one color that appears at least three times around you. Make a quick list or sketch inspired by it. Stop after the third example.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050009",
+      "category": "creativity",
+      "teaser": "Tell a story in exactly three lines.",
+      "title": "Mission: three-line tale",
+      "body": "Write a beginning, middle, and end using only one line each. Keep it simple. When the third line is done, you're finished.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050010",
+      "category": "creativity",
+      "teaser": "Rearrange something for beauty, not function.",
+      "title": "Mission: tabletop composition",
+      "body": "Gather three nearby objects. Arrange them into a display that pleases you for any reason at all. Look at it for a moment, then move on.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050011",
+      "category": "creativity",
+      "teaser": "Name something that doesn't need a name.",
+      "title": "Mission: invent a name",
+      "body": "Choose a tree, rock, cloud, chair, or other ordinary thing. Give it a name that feels right. Use the name in one sentence. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050012",
+      "category": "creativity",
+      "teaser": "Make a postcard no one will send.",
+      "title": "Mission: imaginary postcard",
+      "body": "Imagine you're somewhere else for a day. Write two sentences for a postcard from that place. Stop after signing it with any name you like.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050013",
+      "category": "creativity",
+      "teaser": "A leaf, stone, or twig can be a tool.",
+      "title": "Mission: natural pattern",
+      "body": "If you're outdoors, collect one small natural object from the ground. Use it to create a temporary pattern or arrangement. Leave it there and continue your day.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050014",
+      "category": "creativity",
+      "teaser": "Describe a sound without naming it.",
+      "title": "Mission: sound portrait",
+      "body": "Listen for a nearby sound. Describe it using shapes, textures, or weather instead of its actual source. Stop after three descriptions.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050015",
+      "category": "creativity",
+      "teaser": "Make a map that won't help anyone navigate.",
+      "title": "Mission: memory map",
+      "body": "Sketch a rough map of a room, garden, street, or place you know well. Include one detail from memory that matters only to you. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050016",
+      "category": "creativity",
+      "teaser": "Turn today's weather into a character.",
+      "title": "Mission: weather character",
+      "body": "Imagine the current weather as a person. Give them one habit and one goal. Leave the story there.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050017",
+      "category": "creativity",
+      "teaser": "One minute. One continuous line.",
+      "title": "Mission: single-line drawing",
+      "body": "Put pen to paper and draw without lifting it. Let the line wander into anything it becomes. Stop after one minute.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050018",
+      "category": "creativity",
+      "teaser": "Make up a tiny celebration.",
+      "title": "Mission: invent a holiday",
+      "body": "Create a holiday for something ordinary, like rain on a roof or finding a lost button. Decide how people celebrate it in one sentence. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050019",
+      "category": "creativity",
+      "teaser": "The next object you notice has a role to play.",
+      "title": "Mission: cast the object",
+      "body": "Notice the first object that catches your attention. Imagine it as a character in a film or novel. Give it one line of dialogue and stop.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050020",
+      "category": "creativity",
+      "teaser": "Build something that lasts five minutes.",
+      "title": "Mission: temporary sculpture",
+      "body": "Use coins, stones, blocks, paper, or similar items nearby. Create a small sculpture. Leave it up briefly, then let it go.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050021",
+      "category": "creativity",
+      "teaser": "Collect details, not things.",
+      "title": "Mission: texture inventory",
+      "body": "Find four different textures around you. Describe each in a few words on paper or out loud. Stop after the fourth.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050022",
+      "category": "creativity",
+      "teaser": "A conversation starter for yourself.",
+      "title": "Mission: curious question",
+      "body": "Write a question you don't know the answer to and aren't trying to solve today. Add one possible answer just for fun. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050023",
+      "category": "creativity",
+      "teaser": "Create a title before the artwork exists.",
+      "title": "Mission: title first",
+      "body": "Invent a title for a painting, song, or book that doesn't exist. Then spend two minutes imagining it. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050024",
+      "category": "creativity",
+      "teaser": "Change one familiar phrase.",
+      "title": "Mission: remix a saying",
+      "body": "Think of a common saying or expression. Replace one word and see what happens. Keep the version you like best and move on.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050025",
+      "category": "creativity",
+      "teaser": "Look up. There's material there.",
+      "title": "Mission: cloud or ceiling story",
+      "body": "Study a cloud, ceiling pattern, or patch of light. Imagine a scene hidden inside it. Describe the scene in two sentences. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050026",
+      "category": "creativity",
+      "teaser": "Make something together in under two minutes.",
+      "title": "Mission: shared invention",
+      "body": "If someone is nearby, take turns adding one sentence to an imaginary story. Stop after six sentences total. If you're alone, play both roles.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050027",
+      "category": "creativity",
+      "teaser": "Design a symbol for today.",
+      "title": "Mission: personal emblem",
+      "body": "Draw a simple symbol that captures how today feels so far. It can be abstract or literal. When it feels complete, stop.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050028",
+      "category": "creativity",
+      "teaser": "One object. Three uses it never had.",
+      "title": "Mission: alternate purposes",
+      "body": "Choose a nearby object. Invent three completely different uses for it, no matter how impractical. Stop after the third idea.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050029",
+      "category": "creativity",
+      "teaser": "Write a note from a future afternoon.",
+      "title": "Mission: future message",
+      "body": "Imagine yourself one month from now. Write a short note back to today. Keep it to three sentences or fewer. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678050030",
+      "category": "creativity",
+      "teaser": "Find beauty in repetition.",
+      "title": "Mission: repeating pattern",
+      "body": "Notice a repeating pattern nearby: bricks, fence posts, tiles, branches, or something else. Sketch or describe it in your own style. Stop after a few minutes.",
       "locale": "en"
     },
     {
@@ -721,11 +1169,483 @@
       "locale": "en"
     },
     {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060001",
+      "category": "calm",
+      "teaser": "A chair, a window, two quiet minutes.",
+      "title": "Mission: window pause",
+      "body": "Sit near a window or step outside. Spend two minutes watching light, shadow, or movement without naming tasks to do. When the two minutes are up, stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060002",
+      "category": "calm",
+      "teaser": "Listen until you find the farthest sound.",
+      "title": "Mission: distant listening",
+      "body": "Stay still for one minute. Notice the closest sound you can hear, then the farthest. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060003",
+      "category": "calm",
+      "teaser": "Your hands know this already.",
+      "title": "Mission: warm mug",
+      "body": "Hold a mug, cup, or glass with both hands. Notice its temperature and weight for 30 seconds. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060004",
+      "category": "calm",
+      "teaser": "Find three shades of the same color.",
+      "title": "Mission: color hunt",
+      "body": "Look around the room or outside. Find three different shades of one color and let your eyes rest on each for a moment. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060005",
+      "category": "calm",
+      "teaser": "Stand where you are and do less.",
+      "title": "Mission: still feet",
+      "body": "Stand or sit without adjusting your position for one minute. Feel where your body meets the floor, chair, or ground. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060006",
+      "category": "calm",
+      "teaser": "Open a door. Not to leave.",
+      "title": "Mission: fresh air moment",
+      "body": "Open a window or step outside briefly. Take ten slow breaths while noticing the temperature of the air. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060007",
+      "category": "calm",
+      "teaser": "One object deserves a closer look.",
+      "title": "Mission: quiet inspection",
+      "body": "Choose an ordinary object nearby. Spend two minutes noticing details you usually ignore. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060008",
+      "category": "calm",
+      "teaser": "No destination. Just a slower pace.",
+      "title": "Mission: slow walk",
+      "body": "Walk for five minutes at a slightly slower pace than usual. Let your attention settle on your surroundings rather than your plans. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060009",
+      "category": "calm",
+      "teaser": "The room has a soundtrack.",
+      "title": "Mission: room orchestra",
+      "body": "Pause whatever you're doing. Listen for five different sounds in the space around you. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060010",
+      "category": "calm",
+      "teaser": "Look up for thirty seconds.",
+      "title": "Mission: ceiling and sky",
+      "body": "Wherever you are, direct your gaze upward. Notice shapes, textures, clouds, beams, or branches overhead. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060011",
+      "category": "calm",
+      "teaser": "Nothing to solve for the next minute.",
+      "title": "Mission: one-minute drift",
+      "body": "Sit comfortably and let your thoughts wander for sixty seconds. No notes, no plans, no corrections. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060012",
+      "category": "calm",
+      "teaser": "Find the softest thing nearby.",
+      "title": "Mission: texture break",
+      "body": "Touch a fabric, leaf, blanket, or other surface. Spend a minute noticing its texture without rushing. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060013",
+      "category": "calm",
+      "teaser": "A tiny reset hides in plain sight.",
+      "title": "Mission: tidy one spot",
+      "body": "Clear or straighten a space no larger than a dinner plate. Pause and look at it when you're done. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060014",
+      "category": "calm",
+      "teaser": "The weather has a detail for you.",
+      "title": "Mission: weather notice",
+      "body": "Step outside or look through a window. Identify one thing the weather is doing right now. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060015",
+      "category": "calm",
+      "teaser": "Try a quieter version of a routine.",
+      "title": "Mission: silent sip",
+      "body": "Have a drink of water, tea, or coffee without reading, watching, or multitasking. Pay attention only to the experience. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060016",
+      "category": "calm",
+      "teaser": "One corner of the world, fully noticed.",
+      "title": "Mission: corner study",
+      "body": "Choose a small corner of a room, yard, porch, or street view. Observe it for two minutes as if seeing it for the first time. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060017",
+      "category": "calm",
+      "teaser": "Borrow calm from a tree or a wall.",
+      "title": "Mission: lean and pause",
+      "body": "Lean against something steady: a wall, fence, railing, or tree. Stay there for one minute and feel the support beneath you. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060018",
+      "category": "calm",
+      "teaser": "There is a rhythm nearby.",
+      "title": "Mission: find a pattern",
+      "body": "Listen or look for something repeating: footsteps, wind, a clock, distant traffic, birdsong. Follow that pattern for a minute. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060019",
+      "category": "calm",
+      "teaser": "A seat with no agenda.",
+      "title": "Mission: sit outside",
+      "body": "If you can, sit outdoors for five minutes. Let the environment come to you instead of seeking stimulation. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060020",
+      "category": "calm",
+      "teaser": "One deep exhale changes the pace.",
+      "title": "Mission: longer exhale",
+      "body": "Take five slow breaths. Let each exhale last a little longer than the inhale. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060021",
+      "category": "calm",
+      "teaser": "Watch movement you didn't create.",
+      "title": "Mission: moving world",
+      "body": "Spend two minutes observing something in motion: leaves, clouds, shadows, water, people, or animals. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060022",
+      "category": "calm",
+      "teaser": "The next minute belongs to your senses.",
+      "title": "Mission: sensory check-in",
+      "body": "Notice one thing you can see, hear, feel, and smell. Move slowly through each sense. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060023",
+      "category": "calm",
+      "teaser": "A quiet view is waiting somewhere nearby.",
+      "title": "Mission: change vantage point",
+      "body": "Move to a different seat, doorway, porch, or patch of ground. Spend three minutes taking in the view from there. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060025",
+      "category": "calm",
+      "teaser": "Find the calmest sound around you.",
+      "title": "Mission: sound anchor",
+      "body": "Choose one steady sound and keep your attention on it for sixty seconds. When your mind wanders, gently return. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060026",
+      "category": "calm",
+      "teaser": "Rest your eyes farther away.",
+      "title": "Mission: long-distance gaze",
+      "body": "Look toward the horizon, a distant building, a field, or the far end of a street. Keep your gaze there for a minute. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060027",
+      "category": "calm",
+      "teaser": "A pause between tasks can be a place.",
+      "title": "Mission: doorway pause",
+      "body": "Before entering your next room or activity, stop in the doorway for ten seconds. Notice where you are before moving on. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060028",
+      "category": "calm",
+      "teaser": "Notice what is already supporting you.",
+      "title": "Mission: points of contact",
+      "body": "Sit or stand comfortably. Spend a minute noticing every place your body touches something else. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060029",
+      "category": "calm",
+      "teaser": "The world keeps moving without instructions.",
+      "title": "Mission: watch and wait",
+      "body": "Choose a spot outdoors or by a window. Observe whatever passes through it for three minutes without judging or tracking time. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678060030",
+      "category": "calm",
+      "teaser": "One small pocket of quiet.",
+      "title": "Mission: close your eyes",
+      "body": "Close your eyes for thirty seconds in a safe place. Listen carefully and notice what arrives when sight steps back. That's enough.",
+      "locale": "en"
+    },
+    {
       "id": "a1f2e3d4-c5b6-4789-a012-345678901110",
       "category": "learning",
       "teaser": "One skill, tiny step.",
       "title": "Mission: micro-practice",
       "body": "Pick something you’ve wanted to learn. Do exactly one tiny practice — one chord, one sentence, one stretch, one line read aloud. Stop after that one step.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070001",
+      "category": "learning",
+      "teaser": "Borrow one word from a different world.",
+      "title": "Mission: learn a new word",
+      "body": "Ask someone, read a sign, or open a book to find one word you don't know well. Learn what it means and say it out loud once. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070002",
+      "category": "learning",
+      "teaser": "Your memory gets one small challenge today.",
+      "title": "Mission: remember three",
+      "body": "Look around and choose three objects. Study them for 30 seconds, then turn away and recall as many details as you can. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070003",
+      "category": "learning",
+      "teaser": "Steal a tiny skill from someone nearby.",
+      "title": "Mission: ask how",
+      "body": "Find someone you can talk to and ask how they do a simple task well. Listen without interrupting. Thank them and stop there.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070004",
+      "category": "learning",
+      "teaser": "Ten minutes with a thing you've never noticed.",
+      "title": "Mission: inspect an object",
+      "body": "Choose an everyday object and examine it closely. Notice marks, materials, or features you've never paid attention to before. Stop after five minutes if you like.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070005",
+      "category": "learning",
+      "teaser": "Teach your future self one fact.",
+      "title": "Mission: leave a note",
+      "body": "Learn one new fact from a book, label, conversation, or sign. Write it on a scrap of paper in your own words. That's enough for today.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070006",
+      "category": "learning",
+      "teaser": "A sound is waiting to be identified.",
+      "title": "Mission: name that sound",
+      "body": "Spend two minutes listening. Pick one sound you can't immediately place and investigate what makes it. Stop once you've learned something new.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070007",
+      "category": "learning",
+      "teaser": "One sentence can become a lesson.",
+      "title": "Mission: summarize a page",
+      "body": "Read a single page from any book, magazine, or leaflet. Capture its main idea in one sentence from memory. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070008",
+      "category": "learning",
+      "teaser": "There's a skill hiding in your hands.",
+      "title": "Mission: switch hands",
+      "body": "Do one simple task with your non-dominant hand: stirring, brushing, opening a drawer, or similar. Notice what feels different. Stop after a few minutes.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070009",
+      "category": "learning",
+      "teaser": "Learn the name of something living.",
+      "title": "Mission: identify a neighbor",
+      "body": "Find a tree, flower, bird, or plant nearby. Learn its name from a sign, a book, or someone who knows. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070010",
+      "category": "learning",
+      "teaser": "One question. One real answer.",
+      "title": "Mission: ask an elder",
+      "body": "Talk with someone older than you, if available. Ask what skill they used to rely on a lot in the past but use much less today. Listen to their answer without interrupting. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070011",
+      "category": "learning",
+      "teaser": "A map you already know has a gap in it.",
+      "title": "Mission: redraw a route",
+      "body": "From memory, sketch the route to a place you visit often. Compare it to reality the next time you travel it. Stop after the sketch.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070012",
+      "category": "learning",
+      "teaser": "Can you explain it in one breath?",
+      "title": "Mission: explain simply",
+      "body": "Choose something you know well. Explain it out loud as if speaking to a curious twelve-year-old. Stop when you reach one minute.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070013",
+      "category": "learning",
+      "teaser": "Your eyes know more than you think.",
+      "title": "Mission: spot five patterns",
+      "body": "Walk through a room, street, garden, or field. Find five repeating shapes, colors, or textures. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070014",
+      "category": "learning",
+      "teaser": "Borrow a phrase from another language.",
+      "title": "Mission: learn a phrase",
+      "body": "Ask someone or look up a simple greeting in a language you don't speak. Say it three times. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070015",
+      "category": "learning",
+      "teaser": "A label can teach more than it seems.",
+      "title": "Mission: read the fine print",
+      "body": "Pick an item in your home and read the small print you usually ignore. Learn one detail about where it came from or how it's made. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070016",
+      "category": "learning",
+      "teaser": "Today, practice noticing cause and effect.",
+      "title": "Mission: follow a chain",
+      "body": "Observe something happening around you. Trace it back through three possible causes. Stop once you've built the chain.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070017",
+      "category": "learning",
+      "teaser": "Learn one thing a place is trying to tell you.",
+      "title": "Mission: read a sign",
+      "body": "Find a public sign, notice board, or information plaque. Read it slowly and remember one detail. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070018",
+      "category": "learning",
+      "teaser": "Your voice can be a study tool.",
+      "title": "Mission: repeat and recall",
+      "body": "Read a short paragraph aloud. Put it away and repeat the main idea from memory. Stop after one attempt.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070019",
+      "category": "learning",
+      "teaser": "A stranger's expertise might be nearby.",
+      "title": "Mission: ask one question",
+      "body": "If you meet someone working on a task today, ask a respectful question about it. Learn one thing you didn't know before. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070020",
+      "category": "learning",
+      "teaser": "Turn observation into a tiny field study.",
+      "title": "Mission: count something",
+      "body": "Choose something visible around you—birds, parked vehicles, fence posts, clouds, or footsteps. Count for two minutes and notice any pattern. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070021",
+      "category": "learning",
+      "teaser": "One recipe, tool, or object has a history.",
+      "title": "Mission: trace an origin",
+      "body": "Pick an everyday item nearby. Learn where it was made or where the idea came from. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070022",
+      "category": "learning",
+      "teaser": "Practice a skill for less time than you think.",
+      "title": "Mission: two-minute practice",
+      "body": "Spend exactly two minutes on a skill you already care about: drawing, singing, balancing, handwriting, or another favorite. Stop when the timer ends.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070023",
+      "category": "learning",
+      "teaser": "Memory likes details more than effort.",
+      "title": "Mission: notice three details",
+      "body": "Look at a photograph, painting, or view outside. Find three details you missed at first glance. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070024",
+      "category": "learning",
+      "teaser": "A household object has instructions worth reading.",
+      "title": "Mission: learn a function",
+      "body": "Choose a tool, appliance, or gadget you already own. Discover one feature you've never used or understood. Stop after learning it.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070025",
+      "category": "learning",
+      "teaser": "Learn by comparing, not collecting facts.",
+      "title": "Mission: find a difference",
+      "body": "Place two similar objects side by side. Compare them carefully and list three differences. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070026",
+      "category": "learning",
+      "teaser": "There's a lesson in the weather today.",
+      "title": "Mission: read the sky",
+      "body": "Step outside or look through a window. Notice the clouds, light, or wind and make one prediction about the next hour. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070027",
+      "category": "learning",
+      "teaser": "Learn a name, not just a face.",
+      "title": "Mission: remember someone",
+      "body": "If you meet someone today, make a deliberate effort to remember their name. Repeat it once in conversation. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070028",
+      "category": "learning",
+      "teaser": "One forgotten fact is waiting on a shelf.",
+      "title": "Mission: open a reference",
+      "body": "Pick up a dictionary, handbook, guide, or reference book if you have one nearby. Open to a random page and learn one thing. Stop after that.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070029",
+      "category": "learning",
+      "teaser": "Make a prediction before you know.",
+      "title": "Mission: guess first",
+      "body": "Before checking an answer, estimate it: distance, age, quantity, or time. Then compare your guess with reality. That's enough.",
+      "locale": "en"
+    },
+    {
+      "id": "a1f2e3d4-c5b6-4789-a012-345678070030",
+      "category": "learning",
+      "teaser": "Learn something from where you already are.",
+      "title": "Mission: study the room",
+      "body": "Pause wherever you are. Find one object, one sound, and one texture you've overlooked until now. Stop after noticing all three.",
       "locale": "en"
     }
   ]

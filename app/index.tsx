@@ -1,6 +1,7 @@
 import { Redirect } from "expo-router";
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
+import { theme } from "@/constants/theme";
 import { useBootstrap } from "@/hooks/useBootstrap";
 
 export default function IndexGateScreen() {
@@ -9,7 +10,7 @@ export default function IndexGateScreen() {
   if (state.status === "loading") {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" />
+        <ActivityIndicator size="large" color={theme.primary} />
         <Text style={styles.caption}>Loading…</Text>
       </View>
     );
@@ -33,24 +34,24 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 12,
-    backgroundColor: "#f8f9fa",
+    backgroundColor: theme.background,
   },
-  caption: { fontSize: 15, color: "#6b7280" },
+  caption: { fontSize: 15, color: theme.textSecondary },
   errorBox: {
     flex: 1,
     justifyContent: "center",
-    padding: 24,
-    backgroundColor: "#fef2f2",
+    padding: theme.spacing.screenLarge,
+    backgroundColor: theme.errorBg,
   },
   errorTitle: {
     fontSize: 18,
     fontWeight: "700",
     marginBottom: 8,
-    color: "#991b1b",
+    color: theme.errorDark,
   },
   errorBody: {
     fontSize: 15,
     lineHeight: 22,
-    color: "#451a1a",
+    color: theme.errorText,
   },
 });

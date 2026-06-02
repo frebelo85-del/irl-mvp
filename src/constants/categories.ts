@@ -15,3 +15,7 @@ export const MISSION_CATEGORIES: CategoryOption[] = [
   { value: "calm", label: "Calm" },
   { value: "learning", label: "Learning" },
 ];
+
+export const ALL_MISSION_CATEGORY_VALUES = MISSION_CATEGORIES.map(
+  (c) => c.value,
+);

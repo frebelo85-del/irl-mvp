@@ -87,7 +87,6 @@ flowchart TB
 IRL/
 ├── app/                       # Expo Router
 │   ├── index.tsx              # bootstrap session + redirect onboarding/main
-│   ├── (onboarding)/categories.tsx
 │   ├── (onboarding)/hours.tsx
 │   ├── (onboarding)/consent.tsx
 │   ├── (main)/_layout.tsx
@@ -405,9 +404,8 @@ Documenter l’URL exacte et le header attendu dans le README du repo après sca
 | Écran | Route | Comportement |
 |-------|-------|--------------|
 | Bootstrap | `/` (`index.tsx`) | Si pas de session → `signInAnonymously()` ; redirect onboarding ou inbox |
-| Categories | `/(onboarding)/categories` | Multi-select min **2** catégories |
-| Hours | `/(onboarding)/hours` | `active_hour_start` / `active_hour_end` + `frequency` |
-| Consent | `/(onboarding)/consent` | Toggle notifications (si refus → `notifications_enabled=false` + pas de push) ; toggle analytics ; copy : pas de spam, gaps 48h+ OK |
+| Hours | `/(onboarding)/hours` | `active_hour_start` / `active_hour_end` + `frequency` (step 1 of 2) |
+| Consent | `/(onboarding)/consent` | Toggle notifications (si refus → `notifications_enabled=false` + pas de push) ; toggle analytics ; copy : pas de spam, gaps 48h+ OK (step 2 of 2) |
 | Inbox | `/(main)/inbox` | Liste `mission_deliveries` join `missions` triées par `scheduled_at` desc |
 | Mission | `/mission/[id]` | Query `deliveryId` ; affiche title/body ; boutons Accept / Later / Skip |
 | Complete | même route ou modal | Après action « Accept », CTA « I did it » → `status=completed` + écran feedback helpful |

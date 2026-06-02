@@ -10,18 +10,29 @@
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
     "db:seed": "node scripts/generate-mission-seed.mjs",
-    "db:verify": "node scripts/verify-phase-b.mjs"
+    "db:verify": "node scripts/verify-phase-b.mjs",
+    "test:scheduler": "vitest run supabase/functions/_shared/scheduler.test.ts",
+    "functions:invoke:schedule": "node scripts/invoke-schedule-deliveries.mjs",
+    "functions:invoke:push": "node scripts/invoke-send-push.mjs",
+    "brand:assets": "node scripts/recolor-brand-assets.mjs",
+    "brand:feature-graphic": "node scripts/generate-feature-graphic.mjs"
   },
   "dependencies": {
+    "@react-native-community/datetimepicker": "9.1.0",
+    "@react-native-google-signin/google-signin": "^16.1.2",
     "@supabase/supabase-js": "^2.49.1",
     "expo": "~56.0.4",
+    "expo-apple-authentication": "~56.0.4",
     "expo-constants": "~56.0.15",
+    "expo-dev-client": "~56.0.15",
     "expo-device": "~56.0.4",
+    "expo-image-picker": "~56.0.15",
     "expo-linking": "~56.0.11",
     "expo-localization": "~56.0.6",
     "expo-notifications": "~56.0.13",
     "expo-router": "~56.2.6",
     "expo-secure-store": "~56.0.4",
+    "expo-sharing": "~56.0.15",
     "expo-splash-screen": "~56.0.10",
     "expo-status-bar": "~56.0.4",
     "react": "19.2.3",
@@ -31,11 +42,14 @@
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "4.25.2",
     "react-native-url-polyfill": "^3.0.0",
+    "react-native-view-shot": "5.1.0",
     "react-native-web": "~0.21.0",
     "react-native-worklets": "0.8.3"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
-    "typescript": "~6.0.3"
+    "sharp": "^0.34.2",
+    "typescript": "~6.0.3",
+    "vitest": "^3.2.4"
   }
 }

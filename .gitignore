@@ -3,6 +3,10 @@
 .env.local
 .env.*.local
 
+# Firebase FCM service account (private key — never commit)
+*-firebase-adminsdk-*.json
+google-service-account.json
+
 # Dependencies (Expo / Node)
 node_modules/
 
