@@ -17,13 +17,32 @@ Package Android IRL : `com.filrebelo.irlmvp`.
 2. **Add app** → **Android**.
 3. **Android package name** : `com.filrebelo.irlmvp` (exactement comme `app.config.ts`).
 4. Télécharge **`google-services.json`**.
-5. Place le fichier à la **racine du repo** :
+5. Place le fichier à la **racine du repo** (fichier **gitignored** — ne pas le committer) :
 
 ```text
 IRL/google-services.json
 ```
 
-(`app.config.ts` pointe déjà vers `./google-services.json`.)
+Référence : copie `google-services.json.example` puis remplace par le fichier Firebase, ou télécharge directement depuis la console.
+
+(`app.config.ts` utilise `GOOGLE_SERVICES_JSON` sur EAS, sinon `./google-services.json` en local.)
+
+### EAS Build (fichier absent du repo GitHub)
+
+Upload une fois le fichier comme variable **file** EAS (profil `development` ou `production`) :
+
+```bash
+eas env:create --scope project --name GOOGLE_SERVICES_JSON --type file \
+  --value ./google-services.json --environment development
+```
+
+Même commande pour `--environment preview` / `production` si tu build ces profils Android.
+
+### Si GitHub signale une clé exposée
+
+1. [Google Cloud Console](https://console.cloud.google.com/apis/credentials) → projet Firebase → **régénérer / restreindre** la clé Android (package `com.filrebelo.irlmvp`).
+2. Télécharger un nouveau `google-services.json` depuis Firebase.
+3. Mettre à jour le secret EAS `GOOGLE_SERVICES_JSON` si tu l’utilises.
 
 ---
 

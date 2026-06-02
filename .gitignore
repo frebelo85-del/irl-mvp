@@ -6,6 +6,8 @@
 # Firebase FCM service account (private key — never commit)
 *-firebase-adminsdk-*.json
 google-service-account.json
+# Android client config (contains API key — download from Firebase, use EAS file env for CI)
+google-services.json
 
 # Dependencies (Expo / Node)
 node_modules/

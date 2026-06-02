@@ -21,7 +21,8 @@ export default (): ExpoConfig => ({
   android: {
     package: "com.filrebelo.irlmvp",
     /** Required for Expo push on Android — see docs/android-fcm-setup.md */
-    googleServicesFile: "./google-services.json",
+    googleServicesFile:
+      process.env.GOOGLE_SERVICES_JSON ?? "./google-services.json",
     adaptiveIcon: {
       backgroundColor: "#FFF4E8",
       foregroundImage: "./assets/images/android-icon-foreground.png",
